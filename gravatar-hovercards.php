@@ -3,7 +3,7 @@
 /*
  * Plugin Name: Jetpack Gravatar Hovercards
  * Plugin URI: http://wordpress.org/plugins/jetpack-gravatar-hovercards/
- * Description: Show a pop-up business card of your users' gravatar profiles in comments.
+ * Description: Show a pop-up business card of your users' gravatar profiles in comments. <a href="options-discussion.php#gravatar-hovercard-options">Settings</a>
  * Author: Anas H. Sulaiman
  * Version: 2.5
  * Author URI: http://ahs.pw/

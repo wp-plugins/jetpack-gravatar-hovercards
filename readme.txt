@@ -28,7 +28,7 @@ Things you'd be happy to know:
 Note: Translations was not included, due to the fact that Jetpack uses one transaltion file for all the modules, which makes it really difficult to extract translations.
 The good news is that the module can be translated easily.
 
-** You may also like **
+**You may also like:**
 
 * [Jetpack Omnisearch](http://wordpress.org/plugins/jetpack-omnisearch/) - A single search box, that lets you search many different things.
 * [Jetpack Widget Visibility](http://wordpress.org/plugins/jetpack-widget-visibility/) - Control what pages your widgets appear on.

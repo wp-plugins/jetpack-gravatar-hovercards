@@ -44,12 +44,13 @@ The good news is that the module can be translated easily.
 
 == Screenshots ==
 
-1. Settings
-2. Example
-
 == Changelog ==
+
+= 2.9 =
+* Update to 2.9
+
+= 2.7 =
+* Update to 2.7
 
 = 2.5 =
 * Initial release
-= 2.7 =
-* Updated to Jetpack 2.7

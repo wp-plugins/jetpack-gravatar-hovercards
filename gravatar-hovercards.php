@@ -3,7 +3,7 @@
 /*
  * Plugin Name: Jetpack Gravatar Hovercards
  * Plugin URI: http://wordpress.org/plugins/jetpack-gravatar-hovercards/
- * Description: Show a pop-up business card of your users' gravatar profiles in comments. <a href="options-discussion.php#gravatar-hovercard-options">Settings</a>
+ * Description: Show a pop-up business card of your users' gravatar profiles in comments.
  * Author: Anas H. Sulaiman
  * Version: 2.9
  * Author URI: http://ahs.pw/
@@ -59,7 +59,7 @@ function grofiles_add_settings() {
 	if ( !get_option( 'show_avatars' ) )
 		return;
 
- 	add_settings_field( 'gravatar_disable_hovercards', __( 'Gravatar Hovercards', 'jetpack-grofiles' ), 'grofiles_setting_callback', 'discussion', 'avatars' );
+ 	add_settings_field( 'gravatar_disable_hovercards', __( 'Gravatar Hovercards', 'jetpack-grofiles' ), 'grofiles_setting_callback', 'discussion', 'avatars' ); // E-1
  	register_setting( 'discussion', 'gravatar_disable_hovercards', 'grofiles_hovercard_option_sanitize' );
 }
 
@@ -71,7 +71,7 @@ function grofiles_setting_callback() {
 
 	$checked = 'disabled' == get_option( 'gravatar_disable_hovercards' ) ? '' : 'checked="checked" ';
 
- 	echo "<label id='gravatar-hovercard-options'><input {$checked}name='gravatar_disable_hovercards' id='gravatar_disable_hovercards' type='checkbox' value='enabled' class='code' /> " . __( "View people's profiles when you mouse over their Gravatars", 'jetpack-grofiles' ) . "</label>";
+ 	echo "<label id='gravatar-hovercard-options'><input {$checked}name='gravatar_disable_hovercards' id='gravatar_disable_hovercards' type='checkbox' value='enabled' class='code' /> " . __( "View people's profiles when you mouse over their Gravatars", 'jetpack-grofiles' ) . "</label>"; // E-1
 ?>
 <style type="text/css">
 #grav-profile-example img {
@@ -98,7 +98,7 @@ jQuery( function($) {
 } );
 // ]]>
 </script>
-	<p id="grav-profile-example" class="hide-if-no-js"<?php if ( !$checked ) echo ' style="display:none"'; ?>><?php echo get_avatar( $current_user->ID, 64 ); ?> <span><?php _e( 'Put your mouse over your Gravatar to check out your profile.', 'jetpack-grofiles' ); ?> <br class="clear" /></span></p>
+	<p id="grav-profile-example" class="hide-if-no-js"<?php if ( !$checked ) echo ' style="display:none"'; ?>><?php echo get_avatar( $current_user->ID, 64 ); ?> <span><?php _e( 'Put your mouse over your Gravatar to check out your profile.', 'jetpack-grofiles' ); // E-1 ?> <br class="clear" /></span></p>
 <?php
 }
 
@@ -286,13 +286,27 @@ function grofiles_hovercards_data( $author ) {
 	return $r;
 }
 
-add_action( 'plugins_loaded', 'grofiles_load_textdomain' ); // Edited by Anas H. Sulaiman
-function grofiles_load_textdomain() {
+// E-2 {
+function jetpack_grofiles_load_textdomain() {
 	load_plugin_textdomain( 'jetpack-grofiles', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
-} // Edited by Anas H. Sulaiman
+}
+add_action( 'plugins_loaded', 'jetpack_grofiles_load_textdomain' );
+// }
+
+// E-3 {
+function jetpack_grofiles_settings_link($actions) {
+	return array_merge(
+		array( 'settings' => sprintf( '<a href="%s">%s</a>', 'options-discussion.php#gravatar-hovercard-options', __( 'Settings', 'jetpack-grofiles' ) ) ),
+		$actions
+	);
+	return $actions;
+}
+add_filter('plugin_action_links_' . plugin_basename(__FILE__), 'jetpack_grofiles_settings_link' );
+// }
 
 /*
-* Edits are denoted by the comment: Edited by Anas H. Sulaiman.
-* Other edits are listed here:
-* Edit 1: replaced text domain
+Edits by Anas H. Sulaiman:
+E-1 : replace text domain
+E-2 : load text domain
+E-3 : add settings link
 */

@@ -5,7 +5,7 @@
  * Plugin URI: http://wordpress.org/plugins/jetpack-gravatar-hovercards/
  * Description: Show a pop-up business card of your users' gravatar profiles in comments.
  * Author: Anas H. Sulaiman
- * Version: 2.9
+ * Version: 2.9.3
  * Author URI: http://ahs.pw/
  * Text Domain: jetpack-grofiles
  * Domain Path: /languages/
@@ -59,7 +59,7 @@ function grofiles_add_settings() {
 	if ( !get_option( 'show_avatars' ) )
 		return;
 
- 	add_settings_field( 'gravatar_disable_hovercards', __( 'Gravatar Hovercards', 'jetpack-grofiles' ), 'grofiles_setting_callback', 'discussion', 'avatars' ); // E-1
+ 	add_settings_field( 'gravatar_disable_hovercards', __( 'Gravatar Hovercards', 'jetpack-grofiles' ), 'grofiles_setting_callback', 'discussion', 'avatars' );
  	register_setting( 'discussion', 'gravatar_disable_hovercards', 'grofiles_hovercard_option_sanitize' );
 }
 
@@ -71,7 +71,7 @@ function grofiles_setting_callback() {
 
 	$checked = 'disabled' == get_option( 'gravatar_disable_hovercards' ) ? '' : 'checked="checked" ';
 
- 	echo "<label id='gravatar-hovercard-options'><input {$checked}name='gravatar_disable_hovercards' id='gravatar_disable_hovercards' type='checkbox' value='enabled' class='code' /> " . __( "View people's profiles when you mouse over their Gravatars", 'jetpack-grofiles' ) . "</label>"; // E-1
+ 	echo "<label id='gravatar-hovercard-options'><input {$checked}name='gravatar_disable_hovercards' id='gravatar_disable_hovercards' type='checkbox' value='enabled' class='code' /> " . __( "View people's profiles when you mouse over their Gravatars", 'jetpack-grofiles' ) . "</label>";
 ?>
 <style type="text/css">
 #grav-profile-example img {
@@ -98,7 +98,7 @@ jQuery( function($) {
 } );
 // ]]>
 </script>
-	<p id="grav-profile-example" class="hide-if-no-js"<?php if ( !$checked ) echo ' style="display:none"'; ?>><?php echo get_avatar( $current_user->ID, 64 ); ?> <span><?php _e( 'Put your mouse over your Gravatar to check out your profile.', 'jetpack-grofiles' ); // E-1 ?> <br class="clear" /></span></p>
+	<p id="grav-profile-example" class="hide-if-no-js"<?php if ( !$checked ) echo ' style="display:none"'; ?>><?php echo get_avatar( $current_user->ID, 64 ); ?> <span><?php _e( 'Put your mouse over your Gravatar to check out your profile.', 'jetpack-grofiles' ); ?> <br class="clear" /></span></p>
 <?php
 }
 

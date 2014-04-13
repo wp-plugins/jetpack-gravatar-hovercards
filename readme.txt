@@ -47,7 +47,7 @@ The good news is that the module can be translated easily.
 
 == Changelog ==
 
-= 2.9.3=
+= 2.9.3 =
 
 * Update to 2.9.3
 

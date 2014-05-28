@@ -2,8 +2,8 @@
 Contributors: ahspw
 Tags: gravatar, jetpack, profile, social, appearance
 Requires at least: 3.5
-Tested up to: 3.9
-Stable tag: 2.9.3
+Tested up to: 3.9.1
+Stable tag: 3.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,6 +46,10 @@ The good news is that the module can be translated easily.
 == Screenshots ==
 
 == Changelog ==
+
+= 3.0.1 =
+
+* Update to 3.0.1
 
 = 2.9.3 =
 

@@ -15,6 +15,13 @@ A [Gravatar](http://gravatar.com/) is your profile on the web, and the Hovercard
 
 Hovercards appear when you place your mouse over any Gravatar. Go to Settings > Discussions in your Dashboard, and scroll down to the “Gravatar Hovercards” section. You will see a sample of your Hovercard.
 
+= Before asking for help =
+
+* If this plugin works (which means it activates without problems), please post your help request on the original [Jetpack forums](http://wordpress.org/support/plugin/jetpack). Your chances of getting help will be much better. I'm not the developer of this plugin. See notes below.
+* If, otherwise, this plugin does not work (which means it is not activating or it's breaking your bolg), please ask [here](https://wordpress.org/support/plugin/jetpack-gravatar-hovercards), and I shall help you fix it ASAP.
+
+= Notes = 
+
 [Jetpack](http://wordpress.org/plugins/jetpack/) is a plugin that ships with many modules. Why install the whole package, if you're just interested in one module?!
 
 This plugin is the exact [Gravatar Hovercards module](http://jetpack.me/support/gravatar-hovercards/) of the original Jetpack plugin, only without all the extra stuff.

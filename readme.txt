@@ -13,6 +13,8 @@ Show a pop-up business card of your users' gravatar profiles in comments.
 
 Just the [Gravatar Hovercards module](http://jetpack.me/support/gravatar-hovercards/) from [Jetpack](http://wordpress.org/plugins/jetpack/).
 
+[Download Translations](https://downloads.wordpress.org/plugin/jetpack-gravatar-hovercards.zip). 
+
 = JP Family =
 
 * [JP Sharing](http://wordpress.org/plugins/jetpack-sharing/) - Share content with Facebook, Twitter, and many more.

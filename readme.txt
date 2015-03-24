@@ -11,6 +11,14 @@ Show a pop-up business card of your users' gravatar profiles in comments.
 
 == Description ==
 
+>>**Retiring on June 2015**
+
+>>JP plugins will not be maintained after the end of June 2015.
+>>Thanks for everyone who used these plugins.
+>>Speical thanks for those who gave good ratings.
+
+
+
 Just the [Gravatar Hovercards module](http://jetpack.me/support/gravatar-hovercards/) from [Jetpack](http://wordpress.org/plugins/jetpack/).
 
 *No support* will be provided unless the issue cannot be reproduced using the original [Jetpack](http://wordpress.org/plugins/jetpack/) module.

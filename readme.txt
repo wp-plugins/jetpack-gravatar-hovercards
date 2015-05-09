@@ -1,9 +1,9 @@
 === JP Gravatar Hovercards ===
 Contributors: wpjp
-Tags: gravatar, jetpack, profile, social, appearance
+Tags: gravatar, jetpack, profile, social, appearance, adopt-me
 Requires at least: 3.5
-Tested up to: 4.1.1
-Stable tag: 3.4.1
+Tested up to: 4.2.1
+Stable tag: 3.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,11 +11,11 @@ Show a pop-up business card of your users' gravatar profiles in comments.
 
 == Description ==
 
->>**Retiring on June 2015**
+>**Retiring on June 2015**
 
->>JP plugins will not be maintained after the end of June 2015.
->>Thanks for everyone who used these plugins.
->>Speical thanks for those who gave good ratings.
+>JP plugins will not be maintained after the end of June 2015.
+>Thanks for everyone who used these plugins.
+>Speical thanks for those who gave good ratings.
 
 
 
@@ -35,6 +35,10 @@ Just the [Gravatar Hovercards module](http://jetpack.me/support/gravatar-hoverca
 * [JP Omnisearch](http://wordpress.org/plugins/jetpack-omnisearch/) - A single search box, that lets you search many different things.
 
 == Changelog ==
+
+= 3.5 =
+
+* Update to 3.5
 
 = 3.4.1 =
 

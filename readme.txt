@@ -1,9 +1,9 @@
 === JP Gravatar Hovercards ===
 Contributors: wpjp
 Tags: gravatar, jetpack, profile, social, appearance, adopt-me
-Requires at least: 3.5
+Requires at least: 3.5.3
 Tested up to: 4.2.1
-Stable tag: 3.5
+Stable tag: 3.5.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,13 +17,9 @@ Show a pop-up business card of your users' gravatar profiles in comments.
 >Thanks for everyone who used these plugins.
 >Speical thanks for those who gave good ratings.
 
-
-
 Just the [Gravatar Hovercards module](http://jetpack.me/support/gravatar-hovercards/) from [Jetpack](http://wordpress.org/plugins/jetpack/).
 
 *No support* will be provided unless the issue cannot be reproduced using the original [Jetpack](http://wordpress.org/plugins/jetpack/) module.
-
-[Download Translations](https://downloads.wordpress.org/plugin/jetpack-gravatar-hovercards.zip).
 
 = JP Family =
 
@@ -36,9 +32,9 @@ Just the [Gravatar Hovercards module](http://jetpack.me/support/gravatar-hoverca
 
 == Changelog ==
 
-= 3.5 =
+= 3.5.3 =
 
-* Update to 3.5
+* Update to 3.5.3
 
 = 3.4.1 =
 

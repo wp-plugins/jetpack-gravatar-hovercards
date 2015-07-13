@@ -1,6 +1,6 @@
 === JP Gravatar Hovercards ===
 Contributors: wpjp
-Tags: gravatar, jetpack, profile, social, appearance, adopt-me
+Tags: gravatar, jetpack, profile, social, appearance
 Requires at least: 3.5
 Tested up to: 4.2.2
 Stable tag: 3.6
